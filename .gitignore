@@ -64,3 +64,8 @@ Cargo.lock
 # Test coverage
 .coverage
 htmlcov/
+
+# Tooling state
+.shamash/
+scanner_cache/
+.claude/
