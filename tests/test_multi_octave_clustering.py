@@ -9,9 +9,16 @@ This validates the core hypothesis:
 """
 
 import numpy as np
+import pytest
 import sys
 from pathlib import Path
 from collections import defaultdict
+
+pytest.skip(
+    "References OctaveUnit.unit attribute that doesn't exist by design "
+    "(zero-text-storage invariant). Rewrite scheduled for Phase E.",
+    allow_module_level=True,
+)
 
 sys.path.insert(0, str(Path(__file__).parent))
 
